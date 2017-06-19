@@ -253,8 +253,7 @@ namespace Spammer
 
                     
                     
-                       // IntPtr h = p.MainWindowHandle; //- sets the window 
-                      //  SetForegroundWindow(h); //- sets the window or anything 
+                       
                         SendKeys.SendWait(rc); //- this is message            
                         Thread.Sleep(lbx);//- miliseconds before it hit ENTER
 
