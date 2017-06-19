@@ -83,13 +83,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\nok.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\nok.wav" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="1497794939_Method_Man.png.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
