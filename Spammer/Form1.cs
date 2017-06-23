@@ -11,23 +11,19 @@ using System.Threading;
 using System.Runtime.InteropServices;
 using System.Diagnostics;
 
-
-
 namespace Spammer
 
-    
 {
 
     public partial class Form1 : Form
     {
 
-
-
         [DllImport("User32.dll")]
         static extern int SetForegroundWindow(IntPtr point);
 
         int delay;
-        int var;
+        int
+        var;
         int valido = 0;
         int max;
         string menu;
@@ -42,7 +38,6 @@ namespace Spammer
         {
             InitializeComponent();
 
-
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -54,14 +49,15 @@ namespace Spammer
             label6.Text = "Active";
             label6.ForeColor = Color.Green;
 
-
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
             var += 1;
-            label2.Text = var.ToString();
-            if (textBox2.Text == var.ToString())
+            label2.Text =
+              var.ToString();
+            if (textBox2.Text ==
+              var.ToString())
             {
                 timer1.Stop();
                 var = 0;
@@ -78,7 +74,7 @@ namespace Spammer
                 IntPtr h = p.MainWindowHandle; //- sets the window 
                 SetForegroundWindow(h); //- sets the window or anything 
                 SendKeys.Send(richTextBox1.Text); //- this is message            
-                Thread.Sleep(300);  //- miliseconds before it hit ENTER
+                Thread.Sleep(300); //- miliseconds before it hit ENTER
                 SendKeys.SendWait("{ENTER}"); //- hit enter to a new line
             }
         }
@@ -95,8 +91,6 @@ namespace Spammer
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
-
 
             Process[] processlist = Process.GetProcesses();
 
@@ -123,16 +117,10 @@ namespace Spammer
             }
         }
 
-
-
-
-
         private void button5_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Advanced Flooder\r\nAuthor: Niklaus1911\r\nAll rights reserved.\r\nWebsite: www.igdownloader.com", "Advanced Flooder", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
-
-
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
@@ -159,7 +147,7 @@ namespace Spammer
 
         private void label3_Click(object sender, EventArgs e)
         {
-           
+
         }
 
         private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
@@ -195,9 +183,6 @@ namespace Spammer
             button6.Enabled = false;
         }
 
-       
-
-
         private void Delegato()
         {
             del dl = fuori;
@@ -206,10 +191,9 @@ namespace Spammer
 
             while (1 == 1)
             {
-                if (check==1)
+                if (check == 1)
                 {
                     this.Invoke(dl);
-
 
                     Process p = Process.GetProcessesByName(menu).FirstOrDefault();
                     if (p != null)
@@ -217,21 +201,20 @@ namespace Spammer
                         IntPtr h = p.MainWindowHandle; //- sets the window 
                         SetForegroundWindow(h); //- sets the window or anything 
                         SendKeys.SendWait(rc); //- this is message            
-                        Thread.Sleep(lbx);//- miliseconds before it hit ENTER
+                        Thread.Sleep(lbx); //- miliseconds before it hit ENTER
 
                         SendKeys.SendWait("{ENTER}"); //- hit enter to a new line
 
-
                     }
 
-
                     var += 1;
-                    lbl = var.ToString();
-                    if (max == var)
+                    lbl =
+                      var.ToString();
+                    if (max ==
+                      var)
                     {
 
                         var = 0;
-
 
                         this.Invoke(lb6);
                         this.Invoke(but);
@@ -246,30 +229,23 @@ namespace Spammer
                     }
 
                 }
-                else if (check==0)
+                else if (check == 0)
                 {
                     this.Invoke(dl);
 
+                    SendKeys.SendWait(rc); //- this is message            
+                    Thread.Sleep(lbx); //- miliseconds before it hit ENTER
 
-                    
-                    
-                       
-                        SendKeys.SendWait(rc); //- this is message            
-                        Thread.Sleep(lbx);//- miliseconds before it hit ENTER
-
-                        SendKeys.SendWait("{ENTER}"); //- hit enter to a new line
-
-
-                    
-
+                    SendKeys.SendWait("{ENTER}"); //- hit enter to a new line
 
                     var += 1;
-                    lbl = var.ToString();
-                    if (max == var)
+                    lbl =
+                      var.ToString();
+                    if (max ==
+                      var)
                     {
 
                         var = 0;
-
 
                         this.Invoke(lb6);
                         this.Invoke(but);
@@ -283,26 +259,22 @@ namespace Spammer
 
                     }
                 }
-                
-            }
 
+            }
 
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             int delay;
-            delay= Int32.Parse(textBox1.Text);
-            if (delay<50)
+            delay = Int32.Parse(textBox1.Text);
+            if (delay < 50)
 
             {
                 MessageBox.Show("Minimum delay is 50 ms", "Advanced Flooder", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
 
-                
             }
-            
-            
 
             button4.Enabled = false;
             button6.Enabled = true;
@@ -348,14 +320,14 @@ namespace Spammer
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox1.Checked==true)
+            if (checkBox1.Checked == true)
             {
                 check = 1;
                 button3.Enabled = true;
                 comboBox1.Enabled = true;
                 label1.Enabled = true;
             }
-            else if (checkBox1.Checked==false)
+            else if (checkBox1.Checked == false)
             {
                 check = 0;
                 button3.Enabled = false;
@@ -365,5 +337,4 @@ namespace Spammer
         }
     }
 
-    }
-
+}
