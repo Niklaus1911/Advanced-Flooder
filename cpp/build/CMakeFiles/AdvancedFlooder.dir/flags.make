@@ -6,5 +6,5 @@ CXX_DEFINES = -DCOMPILE_TEST_ONLY
 
 CXX_INCLUDES = -I/home/runner/work/Advanced-Flooder/Advanced-Flooder/cpp/src -I/home/runner/work/Advanced-Flooder/Advanced-Flooder/cpp/resources
 
-CXX_FLAGS = -std=gnu++17
+CXX_FLAGS = -O3 -DNDEBUG -std=gnu++17
 
