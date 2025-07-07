@@ -129,101 +129,53 @@ AdvancedFlooder/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AdvancedFlooder.dir/build.make CMakeFiles/AdvancedFlooder.dir/build
 .PHONY : AdvancedFlooder/fast
 
-src/MainWindow.o: src/MainWindow.cpp.o
-.PHONY : src/MainWindow.o
+src/CrossPlatformLinux.o: src/CrossPlatformLinux.cpp.o
+.PHONY : src/CrossPlatformLinux.o
 
 # target to build an object file
-src/MainWindow.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AdvancedFlooder.dir/build.make CMakeFiles/AdvancedFlooder.dir/src/MainWindow.cpp.o
-.PHONY : src/MainWindow.cpp.o
+src/CrossPlatformLinux.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AdvancedFlooder.dir/build.make CMakeFiles/AdvancedFlooder.dir/src/CrossPlatformLinux.cpp.o
+.PHONY : src/CrossPlatformLinux.cpp.o
 
-src/MainWindow.i: src/MainWindow.cpp.i
-.PHONY : src/MainWindow.i
+src/CrossPlatformLinux.i: src/CrossPlatformLinux.cpp.i
+.PHONY : src/CrossPlatformLinux.i
 
 # target to preprocess a source file
-src/MainWindow.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AdvancedFlooder.dir/build.make CMakeFiles/AdvancedFlooder.dir/src/MainWindow.cpp.i
-.PHONY : src/MainWindow.cpp.i
+src/CrossPlatformLinux.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AdvancedFlooder.dir/build.make CMakeFiles/AdvancedFlooder.dir/src/CrossPlatformLinux.cpp.i
+.PHONY : src/CrossPlatformLinux.cpp.i
 
-src/MainWindow.s: src/MainWindow.cpp.s
-.PHONY : src/MainWindow.s
+src/CrossPlatformLinux.s: src/CrossPlatformLinux.cpp.s
+.PHONY : src/CrossPlatformLinux.s
 
 # target to generate assembly for a file
-src/MainWindow.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AdvancedFlooder.dir/build.make CMakeFiles/AdvancedFlooder.dir/src/MainWindow.cpp.s
-.PHONY : src/MainWindow.cpp.s
+src/CrossPlatformLinux.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AdvancedFlooder.dir/build.make CMakeFiles/AdvancedFlooder.dir/src/CrossPlatformLinux.cpp.s
+.PHONY : src/CrossPlatformLinux.cpp.s
 
-src/MessageSender.o: src/MessageSender.cpp.o
-.PHONY : src/MessageSender.o
+src/main_new.o: src/main_new.cpp.o
+.PHONY : src/main_new.o
 
 # target to build an object file
-src/MessageSender.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AdvancedFlooder.dir/build.make CMakeFiles/AdvancedFlooder.dir/src/MessageSender.cpp.o
-.PHONY : src/MessageSender.cpp.o
+src/main_new.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AdvancedFlooder.dir/build.make CMakeFiles/AdvancedFlooder.dir/src/main_new.cpp.o
+.PHONY : src/main_new.cpp.o
 
-src/MessageSender.i: src/MessageSender.cpp.i
-.PHONY : src/MessageSender.i
-
-# target to preprocess a source file
-src/MessageSender.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AdvancedFlooder.dir/build.make CMakeFiles/AdvancedFlooder.dir/src/MessageSender.cpp.i
-.PHONY : src/MessageSender.cpp.i
-
-src/MessageSender.s: src/MessageSender.cpp.s
-.PHONY : src/MessageSender.s
-
-# target to generate assembly for a file
-src/MessageSender.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AdvancedFlooder.dir/build.make CMakeFiles/AdvancedFlooder.dir/src/MessageSender.cpp.s
-.PHONY : src/MessageSender.cpp.s
-
-src/ProcessEnumerator.o: src/ProcessEnumerator.cpp.o
-.PHONY : src/ProcessEnumerator.o
-
-# target to build an object file
-src/ProcessEnumerator.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AdvancedFlooder.dir/build.make CMakeFiles/AdvancedFlooder.dir/src/ProcessEnumerator.cpp.o
-.PHONY : src/ProcessEnumerator.cpp.o
-
-src/ProcessEnumerator.i: src/ProcessEnumerator.cpp.i
-.PHONY : src/ProcessEnumerator.i
+src/main_new.i: src/main_new.cpp.i
+.PHONY : src/main_new.i
 
 # target to preprocess a source file
-src/ProcessEnumerator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AdvancedFlooder.dir/build.make CMakeFiles/AdvancedFlooder.dir/src/ProcessEnumerator.cpp.i
-.PHONY : src/ProcessEnumerator.cpp.i
+src/main_new.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AdvancedFlooder.dir/build.make CMakeFiles/AdvancedFlooder.dir/src/main_new.cpp.i
+.PHONY : src/main_new.cpp.i
 
-src/ProcessEnumerator.s: src/ProcessEnumerator.cpp.s
-.PHONY : src/ProcessEnumerator.s
-
-# target to generate assembly for a file
-src/ProcessEnumerator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AdvancedFlooder.dir/build.make CMakeFiles/AdvancedFlooder.dir/src/ProcessEnumerator.cpp.s
-.PHONY : src/ProcessEnumerator.cpp.s
-
-src/main.o: src/main.cpp.o
-.PHONY : src/main.o
-
-# target to build an object file
-src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AdvancedFlooder.dir/build.make CMakeFiles/AdvancedFlooder.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
-
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
-
-# target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AdvancedFlooder.dir/build.make CMakeFiles/AdvancedFlooder.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
-
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
+src/main_new.s: src/main_new.cpp.s
+.PHONY : src/main_new.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AdvancedFlooder.dir/build.make CMakeFiles/AdvancedFlooder.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+src/main_new.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AdvancedFlooder.dir/build.make CMakeFiles/AdvancedFlooder.dir/src/main_new.cpp.s
+.PHONY : src/main_new.cpp.s
 
 # Help Target
 help:
@@ -234,18 +186,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... AdvancedFlooder"
-	@echo "... src/MainWindow.o"
-	@echo "... src/MainWindow.i"
-	@echo "... src/MainWindow.s"
-	@echo "... src/MessageSender.o"
-	@echo "... src/MessageSender.i"
-	@echo "... src/MessageSender.s"
-	@echo "... src/ProcessEnumerator.o"
-	@echo "... src/ProcessEnumerator.i"
-	@echo "... src/ProcessEnumerator.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... src/CrossPlatformLinux.o"
+	@echo "... src/CrossPlatformLinux.i"
+	@echo "... src/CrossPlatformLinux.s"
+	@echo "... src/main_new.o"
+	@echo "... src/main_new.i"
+	@echo "... src/main_new.s"
 .PHONY : help
 
 

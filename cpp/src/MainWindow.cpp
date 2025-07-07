@@ -44,8 +44,7 @@ bool MainWindow::ValidateInput() { return true; }
 
 #else
 #include "MainWindow.h"
-#include "MessageSender.h"
-#include "ProcessEnumerator.h"
+#include "CrossPlatform.h"
 #include "../resources/resource.h"
 #include <sstream>
 
@@ -56,8 +55,8 @@ MainWindow::MainWindow(HINSTANCE hInstance)
     : m_hInstance(hInstance), m_hDialog(nullptr), m_isRunning(false), m_shouldStop(false),
       m_currentCount(0), m_maxMessages(10), m_delay(100), m_useProcessTarget(false) {
     s_instance = this;
-    m_messageSender = std::make_unique<MessageSender>();
-    m_processEnumerator = std::make_unique<ProcessEnumerator>();
+    m_messageSender.reset(CreateMessageSender());
+    m_processEnumerator.reset(CreateProcessEnumerator());
     m_messageText = "Default message";
 }
 
@@ -327,7 +326,7 @@ void MainWindow::WorkerThread() {
             }
         } else {
             // Send message to foreground window
-            m_messageSender->SendMessage(m_messageText);
+            m_messageSender->SendMessageToActiveWindow(m_messageText);
         }
         
         // Send Enter key
@@ -346,7 +345,7 @@ void MainWindow::WorkerThread() {
         }
         
         // Sleep for the specified delay
-        Sleep(m_delay);
+        m_messageSender->Sleep(m_delay);
     }
     
     // Update UI when done

@@ -56,8 +56,8 @@ private:
     HWND m_hUseProcessCheck;
     
     // Core functionality
-    std::unique_ptr<MessageSender> m_messageSender;
-    std::unique_ptr<ProcessEnumerator> m_processEnumerator;
+    std::unique_ptr<ICrossPlatformMessageSender> m_messageSender;
+    std::unique_ptr<ICrossPlatformProcessEnumerator> m_processEnumerator;
     
     // Threading
     std::unique_ptr<std::thread> m_workerThread;

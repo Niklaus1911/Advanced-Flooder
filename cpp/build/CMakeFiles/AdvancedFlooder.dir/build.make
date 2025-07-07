@@ -72,80 +72,51 @@ include CMakeFiles/AdvancedFlooder.dir/flags.make
 CMakeFiles/AdvancedFlooder.dir/codegen:
 .PHONY : CMakeFiles/AdvancedFlooder.dir/codegen
 
-CMakeFiles/AdvancedFlooder.dir/src/main.cpp.o: CMakeFiles/AdvancedFlooder.dir/flags.make
-CMakeFiles/AdvancedFlooder.dir/src/main.cpp.o: /home/runner/work/Advanced-Flooder/Advanced-Flooder/cpp/src/main.cpp
-CMakeFiles/AdvancedFlooder.dir/src/main.cpp.o: CMakeFiles/AdvancedFlooder.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/runner/work/Advanced-Flooder/Advanced-Flooder/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/AdvancedFlooder.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AdvancedFlooder.dir/src/main.cpp.o -MF CMakeFiles/AdvancedFlooder.dir/src/main.cpp.o.d -o CMakeFiles/AdvancedFlooder.dir/src/main.cpp.o -c /home/runner/work/Advanced-Flooder/Advanced-Flooder/cpp/src/main.cpp
+CMakeFiles/AdvancedFlooder.dir/src/main_new.cpp.o: CMakeFiles/AdvancedFlooder.dir/flags.make
+CMakeFiles/AdvancedFlooder.dir/src/main_new.cpp.o: /home/runner/work/Advanced-Flooder/Advanced-Flooder/cpp/src/main_new.cpp
+CMakeFiles/AdvancedFlooder.dir/src/main_new.cpp.o: CMakeFiles/AdvancedFlooder.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/runner/work/Advanced-Flooder/Advanced-Flooder/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/AdvancedFlooder.dir/src/main_new.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AdvancedFlooder.dir/src/main_new.cpp.o -MF CMakeFiles/AdvancedFlooder.dir/src/main_new.cpp.o.d -o CMakeFiles/AdvancedFlooder.dir/src/main_new.cpp.o -c /home/runner/work/Advanced-Flooder/Advanced-Flooder/cpp/src/main_new.cpp
 
-CMakeFiles/AdvancedFlooder.dir/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AdvancedFlooder.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/runner/work/Advanced-Flooder/Advanced-Flooder/cpp/src/main.cpp > CMakeFiles/AdvancedFlooder.dir/src/main.cpp.i
+CMakeFiles/AdvancedFlooder.dir/src/main_new.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AdvancedFlooder.dir/src/main_new.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/runner/work/Advanced-Flooder/Advanced-Flooder/cpp/src/main_new.cpp > CMakeFiles/AdvancedFlooder.dir/src/main_new.cpp.i
 
-CMakeFiles/AdvancedFlooder.dir/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AdvancedFlooder.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/runner/work/Advanced-Flooder/Advanced-Flooder/cpp/src/main.cpp -o CMakeFiles/AdvancedFlooder.dir/src/main.cpp.s
+CMakeFiles/AdvancedFlooder.dir/src/main_new.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AdvancedFlooder.dir/src/main_new.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/runner/work/Advanced-Flooder/Advanced-Flooder/cpp/src/main_new.cpp -o CMakeFiles/AdvancedFlooder.dir/src/main_new.cpp.s
 
-CMakeFiles/AdvancedFlooder.dir/src/MainWindow.cpp.o: CMakeFiles/AdvancedFlooder.dir/flags.make
-CMakeFiles/AdvancedFlooder.dir/src/MainWindow.cpp.o: /home/runner/work/Advanced-Flooder/Advanced-Flooder/cpp/src/MainWindow.cpp
-CMakeFiles/AdvancedFlooder.dir/src/MainWindow.cpp.o: CMakeFiles/AdvancedFlooder.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/runner/work/Advanced-Flooder/Advanced-Flooder/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/AdvancedFlooder.dir/src/MainWindow.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AdvancedFlooder.dir/src/MainWindow.cpp.o -MF CMakeFiles/AdvancedFlooder.dir/src/MainWindow.cpp.o.d -o CMakeFiles/AdvancedFlooder.dir/src/MainWindow.cpp.o -c /home/runner/work/Advanced-Flooder/Advanced-Flooder/cpp/src/MainWindow.cpp
+CMakeFiles/AdvancedFlooder.dir/src/CrossPlatformLinux.cpp.o: CMakeFiles/AdvancedFlooder.dir/flags.make
+CMakeFiles/AdvancedFlooder.dir/src/CrossPlatformLinux.cpp.o: /home/runner/work/Advanced-Flooder/Advanced-Flooder/cpp/src/CrossPlatformLinux.cpp
+CMakeFiles/AdvancedFlooder.dir/src/CrossPlatformLinux.cpp.o: CMakeFiles/AdvancedFlooder.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/runner/work/Advanced-Flooder/Advanced-Flooder/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/AdvancedFlooder.dir/src/CrossPlatformLinux.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AdvancedFlooder.dir/src/CrossPlatformLinux.cpp.o -MF CMakeFiles/AdvancedFlooder.dir/src/CrossPlatformLinux.cpp.o.d -o CMakeFiles/AdvancedFlooder.dir/src/CrossPlatformLinux.cpp.o -c /home/runner/work/Advanced-Flooder/Advanced-Flooder/cpp/src/CrossPlatformLinux.cpp
 
-CMakeFiles/AdvancedFlooder.dir/src/MainWindow.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AdvancedFlooder.dir/src/MainWindow.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/runner/work/Advanced-Flooder/Advanced-Flooder/cpp/src/MainWindow.cpp > CMakeFiles/AdvancedFlooder.dir/src/MainWindow.cpp.i
+CMakeFiles/AdvancedFlooder.dir/src/CrossPlatformLinux.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AdvancedFlooder.dir/src/CrossPlatformLinux.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/runner/work/Advanced-Flooder/Advanced-Flooder/cpp/src/CrossPlatformLinux.cpp > CMakeFiles/AdvancedFlooder.dir/src/CrossPlatformLinux.cpp.i
 
-CMakeFiles/AdvancedFlooder.dir/src/MainWindow.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AdvancedFlooder.dir/src/MainWindow.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/runner/work/Advanced-Flooder/Advanced-Flooder/cpp/src/MainWindow.cpp -o CMakeFiles/AdvancedFlooder.dir/src/MainWindow.cpp.s
-
-CMakeFiles/AdvancedFlooder.dir/src/MessageSender.cpp.o: CMakeFiles/AdvancedFlooder.dir/flags.make
-CMakeFiles/AdvancedFlooder.dir/src/MessageSender.cpp.o: /home/runner/work/Advanced-Flooder/Advanced-Flooder/cpp/src/MessageSender.cpp
-CMakeFiles/AdvancedFlooder.dir/src/MessageSender.cpp.o: CMakeFiles/AdvancedFlooder.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/runner/work/Advanced-Flooder/Advanced-Flooder/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/AdvancedFlooder.dir/src/MessageSender.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AdvancedFlooder.dir/src/MessageSender.cpp.o -MF CMakeFiles/AdvancedFlooder.dir/src/MessageSender.cpp.o.d -o CMakeFiles/AdvancedFlooder.dir/src/MessageSender.cpp.o -c /home/runner/work/Advanced-Flooder/Advanced-Flooder/cpp/src/MessageSender.cpp
-
-CMakeFiles/AdvancedFlooder.dir/src/MessageSender.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AdvancedFlooder.dir/src/MessageSender.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/runner/work/Advanced-Flooder/Advanced-Flooder/cpp/src/MessageSender.cpp > CMakeFiles/AdvancedFlooder.dir/src/MessageSender.cpp.i
-
-CMakeFiles/AdvancedFlooder.dir/src/MessageSender.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AdvancedFlooder.dir/src/MessageSender.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/runner/work/Advanced-Flooder/Advanced-Flooder/cpp/src/MessageSender.cpp -o CMakeFiles/AdvancedFlooder.dir/src/MessageSender.cpp.s
-
-CMakeFiles/AdvancedFlooder.dir/src/ProcessEnumerator.cpp.o: CMakeFiles/AdvancedFlooder.dir/flags.make
-CMakeFiles/AdvancedFlooder.dir/src/ProcessEnumerator.cpp.o: /home/runner/work/Advanced-Flooder/Advanced-Flooder/cpp/src/ProcessEnumerator.cpp
-CMakeFiles/AdvancedFlooder.dir/src/ProcessEnumerator.cpp.o: CMakeFiles/AdvancedFlooder.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/runner/work/Advanced-Flooder/Advanced-Flooder/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/AdvancedFlooder.dir/src/ProcessEnumerator.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AdvancedFlooder.dir/src/ProcessEnumerator.cpp.o -MF CMakeFiles/AdvancedFlooder.dir/src/ProcessEnumerator.cpp.o.d -o CMakeFiles/AdvancedFlooder.dir/src/ProcessEnumerator.cpp.o -c /home/runner/work/Advanced-Flooder/Advanced-Flooder/cpp/src/ProcessEnumerator.cpp
-
-CMakeFiles/AdvancedFlooder.dir/src/ProcessEnumerator.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AdvancedFlooder.dir/src/ProcessEnumerator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/runner/work/Advanced-Flooder/Advanced-Flooder/cpp/src/ProcessEnumerator.cpp > CMakeFiles/AdvancedFlooder.dir/src/ProcessEnumerator.cpp.i
-
-CMakeFiles/AdvancedFlooder.dir/src/ProcessEnumerator.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AdvancedFlooder.dir/src/ProcessEnumerator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/runner/work/Advanced-Flooder/Advanced-Flooder/cpp/src/ProcessEnumerator.cpp -o CMakeFiles/AdvancedFlooder.dir/src/ProcessEnumerator.cpp.s
+CMakeFiles/AdvancedFlooder.dir/src/CrossPlatformLinux.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AdvancedFlooder.dir/src/CrossPlatformLinux.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/runner/work/Advanced-Flooder/Advanced-Flooder/cpp/src/CrossPlatformLinux.cpp -o CMakeFiles/AdvancedFlooder.dir/src/CrossPlatformLinux.cpp.s
 
 # Object files for target AdvancedFlooder
 AdvancedFlooder_OBJECTS = \
-"CMakeFiles/AdvancedFlooder.dir/src/main.cpp.o" \
-"CMakeFiles/AdvancedFlooder.dir/src/MainWindow.cpp.o" \
-"CMakeFiles/AdvancedFlooder.dir/src/MessageSender.cpp.o" \
-"CMakeFiles/AdvancedFlooder.dir/src/ProcessEnumerator.cpp.o"
+"CMakeFiles/AdvancedFlooder.dir/src/main_new.cpp.o" \
+"CMakeFiles/AdvancedFlooder.dir/src/CrossPlatformLinux.cpp.o"
 
 # External object files for target AdvancedFlooder
 AdvancedFlooder_EXTERNAL_OBJECTS =
 
-AdvancedFlooder: CMakeFiles/AdvancedFlooder.dir/src/main.cpp.o
-AdvancedFlooder: CMakeFiles/AdvancedFlooder.dir/src/MainWindow.cpp.o
-AdvancedFlooder: CMakeFiles/AdvancedFlooder.dir/src/MessageSender.cpp.o
-AdvancedFlooder: CMakeFiles/AdvancedFlooder.dir/src/ProcessEnumerator.cpp.o
+AdvancedFlooder: CMakeFiles/AdvancedFlooder.dir/src/main_new.cpp.o
+AdvancedFlooder: CMakeFiles/AdvancedFlooder.dir/src/CrossPlatformLinux.cpp.o
 AdvancedFlooder: CMakeFiles/AdvancedFlooder.dir/build.make
 AdvancedFlooder: CMakeFiles/AdvancedFlooder.dir/compiler_depend.ts
+AdvancedFlooder: /usr/lib/x86_64-linux-gnu/libX11.so
+AdvancedFlooder: /usr/lib/x86_64-linux-gnu/libXext.so
+AdvancedFlooder: /usr/lib/x86_64-linux-gnu/libXtst.so
 AdvancedFlooder: CMakeFiles/AdvancedFlooder.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/runner/work/Advanced-Flooder/Advanced-Flooder/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable AdvancedFlooder"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/runner/work/Advanced-Flooder/Advanced-Flooder/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable AdvancedFlooder"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/AdvancedFlooder.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
