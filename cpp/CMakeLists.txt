@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Common source files
 set(COMMON_SOURCES
-    src/main_new.cpp
+    src/main.cpp
     src/CrossPlatform.h
 )
 

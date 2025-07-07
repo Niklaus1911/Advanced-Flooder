@@ -2,7 +2,7 @@ AdvancedFlooder: \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o \
   /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o \
-  CMakeFiles/AdvancedFlooder.dir/src/main_new.cpp.o \
+  CMakeFiles/AdvancedFlooder.dir/src/main.cpp.o \
   CMakeFiles/AdvancedFlooder.dir/src/CrossPlatformLinux.cpp.o \
   /usr/lib/x86_64-linux-gnu/libX11.so \
   /usr/lib/x86_64-linux-gnu/libXext.so \
@@ -48,7 +48,7 @@ AdvancedFlooder: \
 
 /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o:
 
-CMakeFiles/AdvancedFlooder.dir/src/main_new.cpp.o:
+CMakeFiles/AdvancedFlooder.dir/src/main.cpp.o:
 
 CMakeFiles/AdvancedFlooder.dir/src/CrossPlatformLinux.cpp.o:
 

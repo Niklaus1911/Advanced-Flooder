@@ -1,122 +1,182 @@
-# Advanced Flooder - C++ Version
+# Advanced Flooder - Cross Platform C++ Version
 
-This is a C++ port of the Advanced Flooder application, originally written in C#. The application allows you to automatically send repeated messages to other applications with configurable delays.
+A cross-platform message flooding application written in C++. This application can send repeated messages to processes or windows on both Windows and Linux systems.
 
 ## Features
 
-- **Message Automation**: Send repeated messages with configurable delays
-- **Process Targeting**: Option to target specific processes or use the foreground window
-- **Configurable Settings**: 
-  - Adjustable delay between messages (minimum 50ms)
-  - Maximum message count
-  - Custom message text
-- **User Interface**: Native Windows dialog-based interface
-- **Keyboard Shortcuts**: F5 to start, F6 to stop
-- **Real-time Status**: Shows current message count and operation status
+- **Cross-Platform Support**: Runs on both Windows and Linux
+- **Multiple Interfaces**: 
+  - Windows: GUI and CLI modes
+  - Linux: Command-line interface
+- **Process Targeting**: Send messages to specific processes or active windows
+- **Configurable Parameters**: Adjustable message count, delay, and targeting options
+- **Real-time Feedback**: Shows message count and status during operation
+
+## Supported Platforms
+
+- **Windows 10/11**: Full GUI and CLI support
+- **Linux**: Command-line interface with X11 support
+
+## Prerequisites
+
+### Windows
+- Windows 10 or later
+- Visual Studio 2019 or later (with C++ support)
+- CMake 3.10 or later
+
+### Linux
+- Ubuntu 20.04 or later (or equivalent)
+- GCC 9.0 or later
+- CMake 3.10 or later
+- X11 development packages:
+  ```bash
+  sudo apt-get install libx11-dev libxtst-dev
+  ```
 
 ## Building
 
-### Prerequisites
-
-- Windows 10 or later
-- Visual Studio 2019 or later with C++ support
-- CMake 3.10 or later
-
-### Build Instructions
-
-#### Quick Build (Recommended)
-
-**Windows:**
-```bash
-# Run the build script
-build.bat
-```
-
-**Linux/macOS (Compilation Testing):**
-```bash
-# Run the build script
-./build.sh
-```
-
-#### Manual Build
-
-1. Clone the repository
+### Windows
+1. Open a Command Prompt or PowerShell as Administrator
 2. Navigate to the `cpp` directory
-3. Create a build directory:
-   ```bash
-   mkdir build
-   cd build
-   ```
-4. Generate build files:
-   ```bash
-   cmake ..
-   ```
-5. Build the project:
-   ```bash
-   # Windows (Visual Studio)
-   cmake --build . --config Release
-   
-   # Linux/macOS
-   make -j4
+3. Run the build script:
+   ```cmd
+   build.bat
    ```
 
-### Alternative Build with Visual Studio
-
-You can also open the project directly in Visual Studio 2019+ using the "Open Folder" feature and pointing to the `cpp` directory.
+### Linux
+1. Open a terminal
+2. Navigate to the `cpp` directory
+3. Run the build script:
+   ```bash
+   ./build.sh
+   ```
 
 ## Usage
 
-1. Run the `AdvancedFlooder.exe` executable
-2. Configure your settings:
-   - **Message Text**: Enter the message you want to send repeatedly
-   - **Max Messages**: Set the maximum number of messages to send
-   - **Delay**: Set the delay between messages in milliseconds (minimum 50ms)
-3. **Optional**: Enable "Use by process" to target a specific application
-   - Select a process from the dropdown
-   - Click "Reload" to refresh the process list
-4. Click "Start Thread" to begin sending messages
-5. Click "Stop Thread" to stop the operation
-6. Use F5/F6 keyboard shortcuts for quick start/stop
+### Windows GUI Mode (Default)
+```cmd
+AdvancedFlooder.exe
+```
+
+### Windows CLI Mode
+```cmd
+AdvancedFlooder.exe -console
+# or
+AdvancedFlooder_CLI.exe
+```
+
+### Linux CLI Mode
+```bash
+./AdvancedFlooder
+```
+
+## Command Line Interface
+
+The CLI provides the following options:
+
+1. **Start flooding**: Configure and start message flooding
+2. **List processes with windows**: Show all processes that have visible windows
+3. **Test message send**: Send a single test message
+4. **Show status**: Display current flooding status
+5. **Stop flooding**: Stop ongoing message flooding
+6. **Exit**: Quit the application
+
+## Configuration Options
+
+- **Message Text**: The text to send repeatedly
+- **Maximum Messages**: Number of messages to send (0 for unlimited)
+- **Delay**: Time between messages in milliseconds (minimum 50ms)
+- **Target Type**: 
+  - Active window: Send to currently focused window
+  - Specific process: Send to a named process
+
+## Safety Features
+
+- **Minimum Delay**: Enforced 50ms minimum delay between messages
+- **Process Validation**: Checks if target processes exist before sending
+- **Interrupt Handling**: Ctrl+C support for emergency stop
+- **Error Handling**: Graceful handling of missing windows or processes
 
 ## Technical Details
 
 ### Architecture
+- **Cross-Platform Interface**: Abstract base classes for platform-specific implementations
+- **Windows Implementation**: Uses Windows API (SendInput, Process32First, etc.)
+- **Linux Implementation**: Uses X11 for window management and /proc filesystem for process enumeration
 
-The C++ version maintains the same functionality as the original C# version with the following components:
+### Dependencies
+- **Windows**: Windows SDK, Common Controls
+- **Linux**: X11, XTest extension, pthread
 
-- **MainWindow**: Handles the UI and user interactions
-- **MessageSender**: Responsible for sending messages to target applications
-- **ProcessEnumerator**: Enumerates running processes and their windows
+### Key Components
+- `CrossPlatform.h`: Abstract interfaces for cross-platform functionality
+- `CrossPlatformWindows.cpp`: Windows-specific implementations
+- `CrossPlatformLinux.cpp`: Linux-specific implementations
+- `main_new.cpp`: Main application with both GUI and CLI support
 
-### Win32 API Usage
+## Known Limitations
 
-The application uses several Win32 APIs:
-- `SendInput` for simulating keyboard input
-- `SetForegroundWindow` for bringing target windows to focus
-- `EnumWindows` and `EnumProcesses` for process enumeration
-- Dialog API for the user interface
+- **Linux GUI**: Currently only supports CLI mode on Linux
+- **X11 Dependency**: Linux version requires X11 windowing system
+- **Permissions**: May require appropriate permissions for input simulation
+- **Focus Requirements**: Target applications must be focusable for reliable message delivery
 
-### Threading
+## Building from Source
 
-The application uses C++11 threading (`std::thread`) for background message sending operations, ensuring the UI remains responsive.
+### Windows Development
+1. Install Visual Studio 2019 or later with C++ support
+2. Install CMake 3.10 or later
+3. Clone the repository
+4. Run the build script or use CMake directly
 
-## Safety Notice
+### Linux Development
+1. Install required packages:
+   ```bash
+   sudo apt-get install build-essential cmake libx11-dev libxtst-dev
+   ```
+2. Clone the repository
+3. Run the build script or use CMake directly
 
-This application is intended for legitimate automation purposes. Please use responsibly and in accordance with the terms of service of the applications you're targeting. The authors are not responsible for any misuse of this software.
+## Troubleshooting
 
-## Differences from C# Version
+### Linux X11 Issues
+If you encounter X11 permission errors:
+```bash
+xhost +local:
+```
 
-- Uses native Win32 dialogs instead of Windows Forms
-- Implements custom process enumeration using Win32 APIs
-- Uses `SendInput` instead of `SendKeys` for more reliable input simulation
-- Simplified UI layout due to Win32 dialog limitations
-- Better error handling and input validation
+### Missing Dependencies
+Ensure all development packages are installed:
+```bash
+# Ubuntu/Debian
+sudo apt-get install libx11-dev libxtst-dev
+
+# CentOS/RHEL
+sudo yum install libX11-devel libXtst-devel
+
+# Fedora
+sudo dnf install libX11-devel libXtst-devel
+```
+
+### Build Issues
+- Ensure CMake version is 3.10 or later
+- Check that all required development packages are installed
+- Verify compiler compatibility (GCC 9.0+ or Visual Studio 2019+)
 
 ## License
 
-This project maintains the same license as the original C# version.
+This project is developed by Niklaus1911. All rights reserved.
+Website: www.igdownloader.com
 
-## Author
+## Disclaimer
 
-Original C# version: Niklaus1911
-C++ Port: Automated conversion maintaining original functionality
+This software is intended for educational and testing purposes only. Users are responsible for ensuring they have permission to send messages to target applications and comply with all applicable laws and regulations.
+
+## Contributing
+
+This is a personal project by Niklaus1911. For issues or suggestions, please contact through the official channels.
+
+## Version History
+
+- **v2.0**: Cross-platform C++ implementation with Linux support
+- **v1.0**: Original Windows-only C# implementation

@@ -4,8 +4,8 @@ file(REMOVE_RECURSE
   "AdvancedFlooder.pdb"
   "CMakeFiles/AdvancedFlooder.dir/src/CrossPlatformLinux.cpp.o"
   "CMakeFiles/AdvancedFlooder.dir/src/CrossPlatformLinux.cpp.o.d"
-  "CMakeFiles/AdvancedFlooder.dir/src/main_new.cpp.o"
-  "CMakeFiles/AdvancedFlooder.dir/src/main_new.cpp.o.d"
+  "CMakeFiles/AdvancedFlooder.dir/src/main.cpp.o"
+  "CMakeFiles/AdvancedFlooder.dir/src/main.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.
