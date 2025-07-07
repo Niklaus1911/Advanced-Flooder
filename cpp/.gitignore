@@ -1,0 +1,35 @@
+# C++ Build artifacts
+cpp/build/
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+*.lib
+*.a
+*.pdb
+*.ilk
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.vcxproj*
+*.sln
+
+# IDE
+.vs/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Temporary files
+*.tmp
+*.temp
+*~
+.DS_Store
+Thumbs.db

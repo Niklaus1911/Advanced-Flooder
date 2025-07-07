@@ -24,6 +24,22 @@ This is a C++ port of the Advanced Flooder application, originally written in C#
 
 ### Build Instructions
 
+#### Quick Build (Recommended)
+
+**Windows:**
+```bash
+# Run the build script
+build.bat
+```
+
+**Linux/macOS (Compilation Testing):**
+```bash
+# Run the build script
+./build.sh
+```
+
+#### Manual Build
+
 1. Clone the repository
 2. Navigate to the `cpp` directory
 3. Create a build directory:
@@ -37,7 +53,11 @@ This is a C++ port of the Advanced Flooder application, originally written in C#
    ```
 5. Build the project:
    ```bash
+   # Windows (Visual Studio)
    cmake --build . --config Release
+   
+   # Linux/macOS
+   make -j4
    ```
 
 ### Alternative Build with Visual Studio
